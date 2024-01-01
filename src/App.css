@@ -1,0 +1,61 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(197, 188, 188);
+  color: rgb(103, 99, 184);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.todo-div {
+  padding: 2em;
+}
+
+form input{
+  color: black;
+  height: 45px;
+  width: 350px;
+  padding: 5px;
+  margin-right: 12px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid black;
+}
+li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+}
+.delete{
+  color: black;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+.edit{
+  color: black;
+  border-radius: 12px;
+  padding:12px;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+}
+.button{
+  border: 2px solid black;
+  color: black;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: rgb(103, 99, 184);
+  border: none;
+  cursor: pointer;
+} */

@@ -49,14 +49,22 @@ function App() {
         <input className='h-12 w-96 border-2 border-black p-2 text-black rounded bg-white' type="text" placeholder='Enter Todo' onChange={(e) => setText(e.target.value)} value={text}/>
         <button className='button ml-7 bg-blue-700 rounded-xl py-2 px-3 text-white' type='submit'>Add Todo</button>
         </form><br /><br />
-        <ul className='border-2 border-black p-5 mx-80'>
+
+        <div className='mx-80'>
+        <ul className=''>
           {todo.map((item, index) => {
-            return <li key={index}>{item}
+            return <li className='border-2 border-black p-3 m-3' key={index}>
+            <div className='flex justify-evenly items-center'> 
+              <div className='font-semiboldcls text-2xl p-1 h-9 '>{item}</div>
+            <div>
             <button className='delete mt-2 mx-2 bg-blue-700 py-1 px-4 rounded-xl' onClick={() => editTodo(index)}>Edit</button>
             <button className='edit mt-2 mx-2 bg-red-700 py-1 px-2 rounded-xl' onClick={() => deleteTodo(index)}>Delete</button>
+            </div>
+            </div>
             </li>
           })}
         </ul>
+        </div>
       </div>
       
     </>
